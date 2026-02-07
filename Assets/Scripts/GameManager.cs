@@ -8,15 +8,15 @@ using static UnityEditor.PlayerSettings;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] Tetriminos;
-    public float MoveFre = 0.8f;
-    private float passedTime = 0;
-    int height = 20;
-    int width = 10;
-    public int rando;
+    public GameObject[] Tetriminos;//calling the game object tertraminos
+    public float MoveFre = 0.8f;//speed of tetraminos
+    private float passedTime = 0;//how much time is passed
+    int height = 20;//cell height
+    int width = 10;//cell width
+    public int rando; //rng 
 
 
-    public GameObject CurrentTetrimino;
+    public GameObject CurrentTetrimino;//calling current tetramino
     public GameObject blockPrefab;
     public GameObject[,] grid;
 

@@ -26,16 +26,16 @@ public class Score: MonoBehaviour
 
     public void AddScore(int points)
     {
-        score += points;
-        UpdateScoreText();
-        Debug.Log("Score: " + score);
+        score += points;//adds score
+        UpdateScoreText();//updates the score text
+        Debug.Log("Score: " + score);//debug text
     }
 
     void UpdateScoreText()
     {
         if (scoreText != null)
         {
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Score: " + score;//updates score text
         }
     }
 }
